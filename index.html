@@ -41,26 +41,21 @@
             padding-bottom: 40px;
         }
 
-        /* Encabezado y Perfil */
+        /* Encabezado y Perfil con tu Logo Real */
         .header {
             margin-top: 30px;
             margin-bottom: 25px;
         }
 
-        .logo-placeholder {
-            width: 110px;
-            height: 110px;
-            background-color: var(--amarillo);
-            color: var(--verde-principal);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            font-weight: bold;
+        .logo-real {
+            width: 130px;
+            height: 130px;
             margin: 0 auto 15px auto;
             border: 4px solid var(--blanco);
+            border-radius: 50%;
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            display: block;
+            object-fit: cover;
         }
 
         h1 {
@@ -191,9 +186,9 @@
 
     <div class="container">
         
-        <!-- Encabezado -->
+        <!-- Encabezado con tu Logo Real -->
         <div class="header">
-            <div class="logo-placeholder">SY</div>
+            <img class="logo-real" src="https://graph.facebook.com/61591486153543/picture?type=large" alt="Logo Santa Yuca">
             <h1>Santa Yuca</h1>
             <div class="slogan">Sabor de Dioses</div>
         </div>
@@ -243,7 +238,7 @@
 
         </div>
 
-        <!-- Pie de página Institucional Comercial -->
+        <!-- Pie de página Comercial -->
         <div class="footer">
             <p>🇧🇴 Hecho en Bolivia | Santa Cruz de la Sierra</p>
         </div>
@@ -252,3 +247,4 @@
 
 </body>
 </html>
+ 
