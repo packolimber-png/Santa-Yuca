@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Yuca - Sabor de Dioses</title>
+    <!-- Iconos de FontAwesome para las redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --verde-principal: #054227;
+            --verde-oscuro: #032b19;
+            --amarillo: #f4be17;
+            --amarillo-hover: #dbaa12;
+            --blanco: #ffffff;
+            --gris-claro: #f4f6f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--verde-principal);
+            background-image: linear-gradient(135deg, var(--verde-principal) 0%, var(--verde-oscuro) 100%);
+            color: var(--blanco);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        /* Encabezado y Perfil */
+        .header {
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+
+        .logo-placeholder {
+            width: 110px;
+            height: 110px;
+            background-color: var(--amarillo);
+            color: var(--verde-principal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0 auto 15px auto;
+            border: 4px solid var(--blanco);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--amarillo);
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .slogan {
+            font-size: 1rem;
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 5px;
+            color: var(--blanco);
+        }
+
+        /* Tarjeta de Presentación del Producto */
+        .product-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .product-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        /* Insignias de Características */
+        .badges-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            background: var(--blanco);
+            color: var(--verde-principal);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            flex: 1;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .badge i {
+            font-size: 1.1rem;
+            color: #27ae60;
+        }
+
+        /* Enlaces / Botones de Redes Sociales */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            background-color: var(--blanco);
+            color: var(--verde-principal);
+            padding: 16px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .btn-link i {
+            font-size: 1.4rem;
+            position: absolute;
+            left: 24px;
+        }
+
+        .btn-link span {
+            width: 100%;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        /* Efectos Hover y Colores Específicos */
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            background-color: var(--amarillo);
+            color: var(--verde-principal);
+        }
+
+        /* Botón Destacado de Pedidos (WhatsApp) */
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--blanco);
+        }
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            color: var(--blanco);
+        }
+
+        /* Pie de página */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            letter-spacing: 0.5px;
+        }
+
+        .footer img {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Encabezado -->
+        <div class="header">
+            <div class="logo-placeholder">SY</div>
+            <h1>Santa Yuca</h1>
+            <div class="slogan">Sabor de Dioses</div>
+        </div>
+
+        <!-- Tarjeta de Producto Informativa -->
+        <div class="product-card">
+            <p>Chips de yuca frita premium, crujientes y doraditas, sazonadas exclusivamente con <strong>sal natural del Salar de Uyuni</strong>. ¡El snack que te conecta con lo mejor de Bolivia!</p>
+            
+            <div class="badges-container">
+                <div class="badge">
+                    <i class="fa-solid fa-leaf"></i>
+                    100% Natural
+                </div>
+                <div class="badge">
+                    <i class="fa-solid fa-wheat-asnack"></i>
+                    Sin Gluten
+                </div>
+                <div class="badge">
+                    <i class="fa-solid fa-droplet-slash"></i>
+                    Sin Aceite de Palma
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de Enlaces Directos -->
+        <div class="links-container">
+            
+            <!-- REEMPLAZA LOS '#' CON TUS LINKS REALES CUANDO LOS TENGAS -->
+            
+            <a href="https://wa.me/59170000000?text=Hola!%20Quiero%20probar%20las%20deliciosas%20Santa%20Yuca" target="_blank" class="btn-link btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Haz tu Pedido por WhatsApp</span>
+            </a>
+
+            <a href="#" target="_blank" class="btn-link">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>Síguenos en TikTok</span>
+            </a>
+
+            <a href="#" target="_blank" class="btn-link">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Nuestro Instagram</span>
+            </a>
+
+            <a href="#" target="_blank" class="btn-link">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Comunidad en Facebook</span>
+            </a>
+
+        </div>
+
+        <!-- Pie de página Institucional -->
+        <div class="footer">
+            <p>🇧🇴 Hecho en Bolivia | Santa Cruz de la Sierra</p>
+            <p style="margin-top: 5px; font-size: 0.75rem;">Proyecto de Exportación - Jujuy, Argentina</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
